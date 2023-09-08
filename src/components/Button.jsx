@@ -17,15 +17,17 @@ function Button() {
 
       <ButtonDiv>
         <LargeButton color={yellowColor} onClick={primaryButtonOnclickHandler}>
-          Large Primary Button <BsTruck />
+          Large Primary Button &nbsp;
+          <BsTruck />
         </LargeButton>
+
         <MediumButton bgcolor={yellowColor}>Medium</MediumButton>
         <SmallButton bgcolor={yellowColor}>Small</SmallButton>
       </ButtonDiv>
 
       <ButtonDiv>
         <LargeButton color={jeanColor} onClick={negativeButtonOnclickHandler}>
-          Large Negative Button <BsTrophy />
+          Large Negative Button &nbsp; <BsTrophy />
         </LargeButton>
         <MediumButton bgcolor={jeanColor}>Medium</MediumButton>
         <SmallButton bgcolor={jeanColor}>Small</SmallButton>
@@ -35,7 +37,7 @@ function Button() {
 }
 
 export const yellowColor = `#FFC436`;
-const jeanColor = `#337CCF`;
+export const jeanColor = `#337CCF`;
 
 const ButtonDiv = styled.div`
   display: flex;
@@ -44,15 +46,15 @@ const ButtonDiv = styled.div`
   margin-bottom: 10px;
 `;
 
-const LargeButton = styled.button`
+export const LargeButton = styled.button`
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding-left: 30px;
   padding-right: 30px;
   border: 3px solid ${(props) => props.color};
   background-color: white;
-  width: 250px;
+  width: 230px;
   height: 50px;
   border-radius: 8px;
   font-weight: 600;
