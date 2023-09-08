@@ -1,6 +1,5 @@
 import React, { useRef, useState } from "react";
 import styled from "styled-components";
-import Buttonn from "./Buttonn";
 import { SmallButton, yellowColor, LargeButton, jeanColor } from "./Button";
 
 function Modal() {
