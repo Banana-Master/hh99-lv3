@@ -35,7 +35,7 @@ function Input() {
 
   const saveButtonHandler = () => {
     if (name !== "" && price !== "0") {
-      alert(`{ name: ${name} price: ${price} }`);
+      alert(`{ name: ${name} price: ${price.split(',').join('')} }`);
     } else {
       alert(`이름과 가격을 모두 입력하세요`);
     }
